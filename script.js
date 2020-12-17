@@ -15,7 +15,3 @@ function startLiveUpdate(){
 				})
 			}, 2000);
 		}
-		
-document.addEventListener('DOMContentLoaded', function(){
-	startLiveUpdate();
-	});

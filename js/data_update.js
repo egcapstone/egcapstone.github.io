@@ -16,5 +16,5 @@ function startLiveUpdate(){
 			}).catch(function(error){
 				console.log(error);
 			})
-		}, 2000);
+		}, 4000);
 	}	

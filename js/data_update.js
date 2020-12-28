@@ -3,7 +3,7 @@ function startLiveUpdate(){
 	const textExceed = document.getElementById('exceed');
 	
 	setInterval(function(){
-		fetch('https://cors-anywhere.herokuapp.com/http://188.166.206.43:8080/YeaI5w0Tqlrr4wfL3YdAZ_GcUqCYs9le/get/V0').then(function(response){
+		fetch('https://api.allorigins.win/raw?url=http://188.166.206.43:8080/YeaI5w0Tqlrr4wfL3YdAZ_GcUqCYs9le/get/V0').then(function(response){
 			return response.json();
 			}).then(function(data){
 				textHeadCount.textContent = data;
@@ -16,5 +16,5 @@ function startLiveUpdate(){
 			}).catch(function(error){
 				console.log(error);
 			})
-		}, 6000);
+		}, 5000);
 	}	
